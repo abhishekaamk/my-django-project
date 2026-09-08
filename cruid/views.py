@@ -18,7 +18,7 @@ class Add_Student(View):
             fm.save()
             return redirect('/')
         else:
-          return render(request, 'C:/Users/abhishek/Desktop/my/template/form.html', {'form':fm})
+          return render(request, 'parc3.html', {'form':fm})
 
     def post(self, request):
         fm = AddStudentForm(request.POST)
@@ -26,7 +26,7 @@ class Add_Student(View):
           fm.save()
           return redirect('/')
         else:
-          return render(request, 'C:/Users/abhishek/Desktop/my/template/form.html', {'form':fm})
+          return render(request, 'parc3.html', {'form':fm})
         
 class Delete_Student(View):
     def post(self, request):
@@ -41,7 +41,7 @@ class editstudent(View):
    def get(self, request):
       stu = student.object.get(roll_no=roll_no)
       fm = AddStudentForm(instance=stu)
-      return render(request, 'C:/Users/abhishek/Desktop/my/template/form.html', {'form':fm})
+      return render(request, 'parc3.html', {'form':fm})
 
    def post(self, request):
       stu = student.object.get(id=id)
