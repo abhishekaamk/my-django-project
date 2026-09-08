@@ -1,0 +1,59 @@
+/* *{
+    background-image: url("abhi.avif") ;
+    background-size: cover;
+    z-index: -1;
+} */
+.hea{
+    height: 60px;
+    background-color: #0f1111;
+    font-size: 25px;
+    color: aliceblue;
+    border: 5px solid white ;
+    /* visibility: hidden; */
+    /* display: none; */
+    z-index: 10;
+
+}
+.tabl{
+     height: 500px;
+     background-color: pink;
+     color: black;
+    padding-left: 200px;
+}
+
+
+table{
+    justify-content: center;
+    border-spacing: 20px;
+    border: 2px solid black
+}
+
+.head-txt{
+    padding-right: 200px;
+}
+#link{
+
+    color: orange;
+}
+#button{
+    background-color: orange;
+    color: white;
+}
+#txt{
+    height: 20px;
+}
+
+.heading{
+    
+    /* display: inline; */
+ display: inline-block;
+
+}
+
+.ance{
+    display: block;
+}
+
+.ad{
+    background-color: blue;
+}
